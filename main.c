@@ -19,6 +19,7 @@ name[strlen(name)-1] ='\0';
 
     printf("\tTest1!\n");
     printf("Test!!\n");
+    printf("TEst2\n");
 
     return 0;
 }
