@@ -11,9 +11,9 @@ int main()
     d = 1 - (b - 1);
     printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
     b = b * -3;
-   printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
+    printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
     d = d % 3;
-   printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
+    printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
     c = c + b * d + 4;
     printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
     a = b + d;
@@ -24,6 +24,8 @@ int main()
     printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
     a = b * d * c * (-1);
     printf("a = %d, b = %d, c = %d, d = %d\n",a,b,c,d);
+
+    printf("Hello World!!\n");
 
     return 0;
 }
