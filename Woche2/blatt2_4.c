@@ -2,15 +2,16 @@
 #include <stdbool.h>
 
 int main() {
-    int day, month, year;
+    int day, month, year; // variablen deklarieren
     
     printf("Tag, Monat, Jahr eingeben (Format: 24 12 2022)\n");
-    scanf("%d %d %d", &day, &month, &year);
+    scanf("%d %d %d", &day, &month, &year); // Benutzeringabe abfragen und die eingabe der variablen zuweisen
     
     // 1. Januar 1900 war Montag
-    int shift = year - 1900;
+    int shift = year - 1900; // Jahresdifferenz zum Anfang errechnen
     shift = shift + shift / 4 + (day - 1);
-    
+
+    // folgend wird die Tagverschiebung der Monate einbezogen
     if (month > 1) {
         shift = shift + 31;
     }
@@ -49,10 +50,11 @@ int main() {
        aber nur, wenn das Datum nicht das erste Jahr, also 1900, ist
        (weil dann die Zahl stimmt). */
     if ((month == 1 || month == 2) && (year % 4 == 0) && year != 1900) {
-        shift = shift - 1;
+        shift = shift - 1; // abzug der verschiebung des Schaltjahres
     }
-    
-    switch(shift % 7) {
+
+    // anhand des Cases wird der Wochentag entschieden
+    switch(shift % 7) { 
         case 0: printf("Montag\n");
             break;
         case 1: printf("Dienstag\n");
