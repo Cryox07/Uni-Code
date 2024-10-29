@@ -11,12 +11,21 @@ int main()
 
 // TODO: Rechnung erstellen und überprüfen Siehe Aufabe 5!!
  // n = n-()
-    n = n- 5*b;
+
+    int divisor = n / 5;
+    
+    if (b >= divisor) {
+        n = n-(5*divisor);
+    }
+    else {
+        n=n-(5*b);
+    }
+
     if (a >= n) {
         printf("Es müssen %d kleine Schokoriegel gegessen werden.", n);
     }
     else {
-        printf("-1");
+        printf("Es müssen %d kleine Schokoriegel gegessen werden.", -1);
     }
 
     
