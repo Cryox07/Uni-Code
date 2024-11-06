@@ -70,7 +70,7 @@ int main() {
         break;
 
         case 'f':
-            printf("\n\n2e)\n\n");
+            printf("\n\n2f)\n\n");
 
             int zahl, count = 0;
 
