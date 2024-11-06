@@ -11,7 +11,7 @@ int main() {
 
     switch (x) {
         case 'a': 
-            printf("\n\n2a)\n\n");
+                   printf("\n\n2a)\n\n");
             for (int i = 100; i<= 200; i++) {
                 printf("%d\n",i);
             }
@@ -28,7 +28,7 @@ int main() {
 
         case 'c':
             printf("\n\n2c)\n\n");
-            for (int i = 333; i <= 222;i--) {
+            for (int i = 333; i >= 222;i--) {
                 if (i % 3 == 0 ){
                     printf("%d\n",i);
                 }
