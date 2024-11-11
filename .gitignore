@@ -10,3 +10,10 @@
 # Unignore gitignore
 !*.girignore
 
+# Ignore .vscode
+*.vscode
+
+# Ignore.exe 
+*.exe 
+
+
