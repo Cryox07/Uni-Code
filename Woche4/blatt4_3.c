@@ -3,84 +3,35 @@
 
 int main()
 {
-int i, x, a;
 
-  printf("Bitte geben Sie einen der Faelle eine (1 = int, 2 = unsigned int...): ");
-  scanf("%d", &a);
+int x; 
+int factorial = 1;
+//unsigned int factorial = 1;
+//long long factorial = 1;
+//unsigned long long factorial = 1;
 
   printf("Bitte geben Sie ihre Zahl ein: ");
   scanf("%d", &x);
 
-
-  switch (a)
+  for (int i = 1; i <= x; i++) // for schleife für die Dauer von i != n
   {
-  case (1):
-      int z1=1;
-  for(i=1; i < x; i++)
-  {
-    if( z1  *i > 0)
-    {
-      z1  *=i;
-    }
-    else{
-      printf("Die maimale Faktor der Fakultät für diesen Datentyp ist %d\n", i);
-      break;
-    }
+    factorial *= i;
   }
-  printf("Die Fakultät von %d ist %d\n", i,z1);
+    printf("%d! = %d\n\n", x, factorial);
+//    printf("%d! = %u\n\n", x, factorial);
+//    printf("%d! = %lld\n\n", x, factorial);
+//    printf("%d! = %llu\n\n", x, factorial);
 
-   break;
+//  int ll = sizeof(long long); = 8 also 8 byte = 2* (8*8) = 128  
+//  printf("%d\n", ll);
 
+// pruefung durch Taschenrechenr moeglich
+    printf("Für int ist der größt mögliche Wert für n = 12\n"); //groesste Zahl = 2^(32-1)-1, 2^(31) -1 < 13! 
+  
+    printf("Für unsignt int ist der größt mögliche Wert für n = 12\n"); //groesste  Zahl = 2^(32)-1, 2^(32) -1 < 13! 
 
-  case (2):
-      unsigned int z2=1;
-  for(i=1; i < x; i++)
-  {
-    if( z2*i > z2)
-    {
-      z2*=i;
-    }
-    else{
-      printf("Die maimale Faktor der Fakultät für diesen Datentyp ist %d\n", i);
-      break;
-    }
-  }
-  printf("Die Fakultät von %d ist %d\n", i, z2);
+    printf("Für long long ist der größt mögliche Wert für n = 33\n"); //groesste  Zahl = 2^(128-1)-1, 2^(127) -1 < 34! 1.7014118e+38
 
-      break;
-  case (3):
-      long long z3=1;
-  for(i=1; i < x; i++)
-  {
-    if( z3*i > 0)
-    {
-      z3*=i;
-    }
-    else{
-      printf("Die maimale Faktor der Fakultät für diesen Datentyp ist %d\n", i);
-      break;
-    }
-  }
-  printf("Die Fakultät von %d ist %lld\n", i, z3);
-
-      break;
-  case (4):
-      unsigned long long int z4=1;
-  for(i=1; i < x; i++)
-  {
-    if( z4*i > 0)
-    {
-      z4*=i;
-    }
-    else{
-      printf("Die maimale Faktor der Fakultät für diesen Datentyp ist %d\n", i);
-      break;
-    }
-  }
-  printf("Die Fakultät von %d ist %lld\n", i, z4);
-
-      break;
-  }
-
+    printf("Für unsignt long long ist der größt mögliche Wert für n = 34\n"); //groesste  Zahl = 2^(128)-1, 2^(128) -1 < 34! 3.4028237e+38
   return 0;
 }
