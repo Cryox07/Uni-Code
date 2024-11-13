@@ -39,5 +39,7 @@ int main ()
     printf("Das Ergebnis  für n = %d ist für float  %.16f \n",n,s1);
     printf("Das Ergebnis  für n = %d ist für double %.16lf \n",n,s2);
 
+    //double ist genauer, da dieser mehr bits zu darstellung der Zahl hat. 
+
     return 0;
 }
