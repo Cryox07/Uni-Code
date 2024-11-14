@@ -3,7 +3,7 @@
 
 int main() {
 
-  int s, x, y = 0, i = 0;
+  int s, x, y = 0, i = 0; // s fuer switch, x fuer eingabe, y fuer gtz, i fuer counter und schleife
 
   printf("Waehlen Sie einen der Faelle aus (1 oder 2): ");
   scanf("%d",&s);
@@ -14,7 +14,7 @@ int main() {
     while (i <= 10) {
     
       if (i == 10){
-        printf("%d\n", y);
+        printf("Die groesste Zahl ist: %d\n", y);
         break;
       }
 
