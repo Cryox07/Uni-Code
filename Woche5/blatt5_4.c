@@ -47,4 +47,11 @@ int main()
     }
     
     printf("%d\n", result);
+
+    /*  return 0 ; fehlt, manche modernen Compiler benötigen das statement teilweise nicht.
+        Siehe debug console log VSC mit gcc:
+        [Thread 9924.0x5ce8 exited with code 0]
+        [Inferior 1 (process 9924) exited normally]
+        The program 'C:~\Woche5\blatt5_4.exe' has exited with code 0 (0x00000000). Pfad wurde aus durch mich gekuerzt.
+    */
 }
