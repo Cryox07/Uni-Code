@@ -38,7 +38,7 @@ void entferne(char str[], char c)
         if (count == 1)
         {
             str[i-1] =  str[i];
-            if(i == n-1)
+            if(i == n-count)
             {
                 str[i] = 0;
             }
