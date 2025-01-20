@@ -19,15 +19,10 @@ int main()
     printf("Das Ergebnis des Kreuzproduktes ist: \n");
 
     cross(w,u,v);
-    for(int i=0; i<DIM;i++)
-    {
-        printf("%f\n", w[i]);
-    }
+    show_data(w);
+    
     cross(u,u,v);
-    for(int i=0; i<DIM;i++)
-    {
-        printf("%f\n", w[i]);
-    }
+    show_data(u);
 
     }
 
@@ -45,7 +40,7 @@ void show_data (Vec3 v)
     printf("Die Werte des Vektors sind wie Folgt:\n");
     for (int i=0; i<DIM;i++)
     {
-        printf("%f", v[i]);
+        printf("%f\n", v[i]);
     }
 }
 void add (Vec3 res, Vec3 a, Vec3 b)
