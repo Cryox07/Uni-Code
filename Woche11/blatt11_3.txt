@@ -1,0 +1,6 @@
+(a)
+    der pointer ip zeigt nach der Ausführung der Zeilen folgendes an:
+    Das element an der 3. Stelle also dem Index 3 bzw. myArray[2]
+
+(b)
+        *ip = 255;

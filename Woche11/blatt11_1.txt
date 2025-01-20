@@ -1,0 +1,6 @@
+|Name der Variablen|Speicheradresse |Wert im Speicher       |Typ der Variablen|
+|------------------|----------------|-----------------------|-----------------|
+|x                 |4096            |/                      |int              |
+|n                 |4100            |10                     |int              |
+|y                 |4104            |4100(Speicheradresse n)|pointer          |
+
